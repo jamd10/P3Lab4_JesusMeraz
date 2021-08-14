@@ -71,7 +71,7 @@ void Libreria::prestarLibro(){
 void Libreria::DevolverLibro(string name){
 	for(int i = 0; i < ListaLibros.size(); i++){
 		if(ListaLibros[i]->getTitulo() == name){
-			cout<<"Su libro esta disponible, puede tomarlo"<<endl;
+			cout<<"Su libro esta disponible, gracias por devolverlos"<<endl;
 			ListaLibros[i]->setDisponible(true);
 		}else{
 			cout<<"Lo sentimos pero su libro no esta disponible"<<endl;
